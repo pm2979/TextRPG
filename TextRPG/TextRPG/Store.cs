@@ -121,7 +121,7 @@ namespace TextRPG
                 {
                     Console.WriteLine($"\n{weapon.Name}을(를) 구매했습니다!");
                     player.gold -= weapon.Gold;
-                    weapon.Gold -= 2 * weapon.Gold;
+                    weapon.Gold -= 2 * weapon.Gold; // 장비의 가격을 음수로 만들어서 판매 가능과 불가능을 구분
                     playerWeapons.Add(weapon);
                 }
                 else
